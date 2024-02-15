@@ -1,5 +1,6 @@
 module.exports = {
 	root: true,
+	//要在配置文件中使用 env 键指定环境，并通过将每个环境设置为 true 想启用的环境。例如，下面是启用浏览器和 Node.js 环境的例子：
 	env: {
 		browser: true,
 		es2021: true,
@@ -12,6 +13,9 @@ module.exports = {
 		sourceType: 'module',
 	},
 	extends: ['plugin:vue/vue3-essential', 'plugin:vue/essential', 'eslint:recommended'],
+	//要配置一个定义在插件中的规则，你必须在规则的 ID 前加上插件的名称和 /。比如说：
+	//	'@typescript-eslint/ban-ts-ignore': 'off',
+	//'vue/custom-event-name-casing': 'off',
 	plugins: ['vue', '@typescript-eslint'],
 	overrides: [
 		{

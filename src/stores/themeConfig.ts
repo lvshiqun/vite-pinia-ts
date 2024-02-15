@@ -104,7 +104,7 @@ export const useThemeConfig = defineStore('themeConfig', {
 			// 是否开启水印
 			isWartermark: true,
 			// 水印文案
-			wartermarkText: 'vue-next-admin',
+			wartermarkText: 'asas',
 
 			/**
 			 * 其它设置
