@@ -1,5 +1,6 @@
 <template>
-	<div class="home-container layout-pd">
+	<div id="exportData" ref="exportData" class="home-container layout-pd">
+		<button @click="exportechars">exportechars</button>
 		<el-row :gutter="15" class="home-card-one mb15">
 			<el-col
 				:xs="24"
@@ -71,6 +72,7 @@ import * as echarts from 'echarts';
 import { storeToRefs } from 'pinia';
 import { useThemeConfig } from '/@/stores/themeConfig';
 import { useTagsViewRoutes } from '/@/stores/tagsViewRoutes';
+import  downloadPDF  from "/@/utils/htmltoPdf";
 
 // 定义变量内容
 const homeLineRef = ref();
@@ -500,7 +502,15 @@ const initEchartsResizeFun = () => {
 // 批量设置 echarts resize
 const initEchartsResize = () => {
 	window.addEventListener('resize', initEchartsResizeFun);
-};
+}; 
+const exportData=ref()
+const exportechars=()=>{
+	downloadPDF.downloadPDF(document.getElementById("exportData"),"数据")
+	// console.log(1111)
+	// let  pdf= new downloadPDF(exportData.value,"数据","home-container")
+	// console.log(exportData)
+	// pdf.outPutPdfFn("数据")
+}
 // 页面加载时
 onMounted(() => {
 	initEchartsResize();

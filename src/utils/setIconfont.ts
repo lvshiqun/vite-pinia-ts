@@ -14,6 +14,7 @@ export function setCssCdn() {
 		link.rel = 'stylesheet';
 		link.href = v;
 		link.crossOrigin = 'anonymous';
+		console.log(link)
 		document.getElementsByTagName('head')[0].appendChild(link);
 	});
 }

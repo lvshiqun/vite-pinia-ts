@@ -128,6 +128,7 @@ const getTagsViewRoutes = async () => {
 	state.routePath = (await route.meta.isDynamic) ? route.meta.isDynamicPath : route.path;
 	state.tagsViewList = [];
 	state.tagsViewRoutesList = tagsViewRoutes.value;
+	console.log(state.tagsViewRoutesList)
 	initTagsView();
 };
 // pinia 中获取路由信息：如果是设置了固定的（isAffix），进行初始化显示

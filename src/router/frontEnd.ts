@@ -151,3 +151,4 @@ export function setFilterHasRolesMenu(routes: any, roles: any) {
 	});
 	return menu;
 }
+

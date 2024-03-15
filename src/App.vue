@@ -21,7 +21,15 @@ import { Local, Session } from '/@/utils/storage';
 import mittBus from '/@/utils/mitt';
 import setIntroduction from '/@/utils/setIconfont';
 
-// 引入组件
+// 引入异步组件 // 引入组件   可以搭配<Suspense></Suspense>包裹组件里面有两个插槽
+// <Suspense>
+// 			<template #default>
+// 				<DeptDialog ref="deptDialogRef" @refresh="getTableData()" />
+// 			</template>
+// 			<template #fallback>
+//                数据没出现之前的样式
+// 			</template>
+// 		</Suspense>
 const LockScreen = defineAsyncComponent(() => import('/@/layout/lockScreen/index.vue'));
 const Setings = defineAsyncComponent(() => import('/@/layout/navBars/topBar/setings.vue'));
 const CloseFull = defineAsyncComponent(() => import('/@/layout/navBars/topBar/closeFull.vue'));

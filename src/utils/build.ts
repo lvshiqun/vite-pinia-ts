@@ -13,6 +13,7 @@ export const buildConfig = {
 		return importToCDN({
 			prodUrl: 'https://unpkg.com/{name}@{version}/{path}',
 			modules: [
+				//自动配置
 				// autoComplete('vue'),
 				// autoComplete('axios'),
 				{
@@ -35,51 +36,51 @@ export const buildConfig = {
 					var: 'ElementPlus',
 					path: 'dist/index.full.js',
 				},
-				// {
-				// 	name: '@element-plus/icons-vue',
-				// 	var: 'ElementPlusIconsVue',
-				// 	path: 'dist/index.iife.min.js',
-				// },
-				// {
-				// 	name: 'echarts',
-				// 	var: 'echarts',
-				// 	path: 'dist/echarts.min.js',
-				// },
-				// {
-				// 	name: 'echarts-gl',
-				// 	var: 'echarts-gl',
-				// 	path: 'dist/echarts-gl.min.js',
-				// },
-				// {
-				// 	name: 'echarts-wordcloud',
-				// 	var: 'echarts-wordcloud',
-				// 	path: 'dist/echarts-wordcloud.min.js',
-				// },
-				// {
-				// 	name: 'vue-i18n',
-				// 	var: 'VueI18n',
-				// 	path: 'dist/vue-i18n.global.min.js',
-				// },
-				// {
-				// 	name: 'jsplumb',
-				// 	var: 'jsPlumb',
-				// 	path: 'dist/js/jsplumb.min.js',
-				// },
-				// {
-				// 	name: 'cropperjs',
-				// 	var: 'Cropper',
-				// 	path: 'dist/cropper.min.js',
-				// },
-				// {
-				// 	name: 'sortablejs',
-				// 	var: 'Sortable',
-				// 	path: 'Sortable.min.js',
-				// },
-				// {
-				// 	name: 'qrcodejs2-fixes',
-				// 	var: 'QRCode',
-				// 	path: 'qrcode.min.js',
-				// },
+				{
+					name: '@element-plus/icons-vue',
+					var: 'ElementPlusIconsVue',
+					path: 'dist/index.iife.min.js',
+				},
+				{
+					name: 'echarts',
+					var: 'echarts',
+					path: 'dist/echarts.min.js',
+				},
+				{
+					name: 'echarts-gl',
+					var: 'echarts-gl',
+					path: 'dist/echarts-gl.min.js',
+				},
+				{
+					name: 'echarts-wordcloud',
+					var: 'echarts-wordcloud',
+					path: 'dist/echarts-wordcloud.min.js',
+				},
+				{
+					name: 'vue-i18n',
+					var: 'VueI18n',
+					path: 'dist/vue-i18n.global.min.js',
+				},
+				{
+					name: 'jsplumb',
+					var: 'jsPlumb',
+					path: 'dist/js/jsplumb.min.js',
+				},
+				{
+					name: 'cropperjs',
+					var: 'Cropper',
+					path: 'dist/cropper.min.js',
+				},
+				{
+					name: 'sortablejs',
+					var: 'Sortable',
+					path: 'Sortable.min.js',
+				},
+				{
+					name: 'qrcodejs2-fixes',
+					var: 'QRCode',
+					path: 'qrcode.min.js',
+				},
 				// {
 				// 	name: 'print-js',
 				// 	var: 'printJS',
