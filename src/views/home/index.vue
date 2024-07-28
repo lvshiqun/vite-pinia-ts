@@ -514,7 +514,6 @@ const exportechars=()=>{
 // 页面加载时
 onMounted(() => {
 	initEchartsResize();
-	console.log(8989898989)
 });
 // 由于页面缓存原因，keep-alive
 onActivated(() => {
